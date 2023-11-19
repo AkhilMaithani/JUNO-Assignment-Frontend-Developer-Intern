@@ -102,15 +102,6 @@
 /* -------------------------------------------------------------------------- */
 /*                           responsive design code                           */
 /* -------------------------------------------------------------------------- */
-@media screen and (width >= 1440px) {
-}
-
-@media screen and (width < 1440px) {
-}
-
-@media screen and (width <= 1024px) {
-}
-
 @media screen and (width <= 768px) {
 	.dashboard-outer-section {
 		height: 100vmax;
@@ -147,12 +138,6 @@
 	.hide-icon {
 		display: flex;
 	}
-}
-
-@media screen and (width <= 425px) {
-}
-
-@media screen and (width <= 375px) {
 }
 
 @media screen and (width <= 320px) {
