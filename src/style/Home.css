@@ -1,0 +1,282 @@
+/* -------------------------------------------------------------------------- */
+/*                                Home Css File                               */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                           hero image, content css                          */
+/* -------------------------------------------------------------------------- */
+.main-outer-section {
+	width: 100%;
+	height: 100vmin;
+	font-family: "Tilt Neon", sans-serif;
+}
+
+.main-inner-section {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.main-hero-section {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: radial-gradient(
+		circle at 10% 20%,
+		rgb(0, 102, 161) 0%,
+		rgb(0, 68, 108) 90.1%
+	);
+}
+
+.main-hero-section h1 {
+	font-size: 10rem;
+}
+
+.main-hero-section h2 {
+	font-size: 5rem;
+}
+
+.main-hero-section :is(h1, h2, p) {
+	padding: 1rem 4rem;
+	color: #ffffff;
+}
+
+.main-hero-section p {
+	font-size: 1.5rem;
+}
+
+.hero-image {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 25rem;
+	padding: 5rem;
+	color: #f5f5dc;
+	filter: drop-shadow(0px 0px 7px #f5f5dc);
+	-webkit-filter: drop-shadow(0px 0px 7px #f5f5dc);
+}
+
+.main-content-section {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f5f5dc;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                hero form css                               */
+/* -------------------------------------------------------------------------- */
+.form-container {
+	width: 80%;
+	gap: 2rem;
+}
+
+.form-item {
+	gap: 1rem;
+}
+
+:is(.form-container, .form-item) {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-item label {
+	font-size: 1.5rem;
+}
+
+.form-item input {
+	font-family: "Open Sans", sans-serif;
+	padding: 1.5rem 2rem;
+	border-radius: 0.8rem;
+	-webkit-border-radius: 0.8rem;
+	-moz-border-radius: 0.8rem;
+	-ms-border-radius: 0.8rem;
+	-o-border-radius: 0.8rem;
+	outline: none;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
+}
+
+.form-item input:placeholder-shown {
+	color: var(--content-tertiary);
+}
+
+.form-item input:focus {
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--stroke-primary);
+}
+
+.form-container button {
+	margin-top: 2rem;
+	padding: 1rem;
+	background-color: var(--base-brand);
+	color: var(--background-default);
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+	text-transform: uppercase;
+	box-shadow: 0px 0px 8px 0px var(--base-brand);
+}
+
+.form-container button span {
+	font-size: 2rem;
+}
+
+.error-message {
+	color: var(--base-error);
+	font-weight: 500;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    toast                                   */
+/* -------------------------------------------------------------------------- */
+.toast-message {
+	background-color: bisque;
+	color: black;
+	font-size: 1.3rem;
+	font-family: "Open Sans", sans-serif;
+	padding: 1.5rem 2rem;
+	border-radius: 2rem;
+	-webkit-border-radius: 2rem;
+	-moz-border-radius: 2rem;
+	-ms-border-radius: 2rem;
+	-o-border-radius: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           responsive design code                           */
+/* -------------------------------------------------------------------------- */
+@media screen and (width >= 1440px) {
+	.main-hero-section h1 {
+		font-size: 9rem;
+	}
+
+	.main-hero-section h2 {
+		font-size: 4.5rem;
+	}
+
+	.hero-image {
+		font-size: 18rem;
+	}
+
+	.main-hero-section p {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (width < 1440px) {
+	.main-hero-section h1 {
+		font-size: 8rem;
+	}
+
+	.main-hero-section h2 {
+		font-size: 4rem;
+	}
+
+	.hero-image {
+		font-size: 16rem;
+	}
+
+	.main-hero-section p {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (width <= 1024px) {
+	.main-hero-section h1 {
+		font-size: 6rem;
+	}
+
+	.main-hero-section h2 {
+		font-size: 3.5rem;
+	}
+
+	.hero-image {
+		font-size: 14rem;
+	}
+
+	.main-hero-section p {
+		font-size: 1.2rem;
+	}
+
+	.form-container {
+		width: 90%;
+	}
+}
+
+@media screen and (width <= 768px) {
+	.main-outer-section {
+		height: 100vmax;
+	}
+
+	.main-inner-section {
+		flex-direction: column;
+	}
+
+	.main-hero-section {
+		width: 100%;
+	}
+
+	.main-content-section {
+		width: 100%;
+	}
+
+	.main-hero-section h1 {
+		font-size: 4rem;
+	}
+
+	.main-hero-section h2 {
+		font-size: 3rem;
+	}
+
+	.hero-image {
+		font-size: 12rem;
+	}
+
+	.main-hero-section p {
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+	}
+
+	.form-container {
+		width: 90%;
+		padding: 3rem;
+	}
+}
+
+@media screen and (width <= 425px) {
+	.main-hero-section h1 {
+		font-size: 3rem;
+	}
+
+	.main-hero-section h2 {
+		font-size: 1.5rem;
+	}
+
+	.hero-image {
+		font-size: 10rem;
+	}
+
+	.main-hero-section p {
+		font-size: 1rem;
+	}
+
+	.form-container {
+		width: 100%;
+		padding: 3rem;
+	}
+}

@@ -1,0 +1,107 @@
+/* -------------------------------------------------------------------------- */
+/*                               Navbar Css File                              */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                  logo css                                  */
+/* -------------------------------------------------------------------------- */
+:is(.logo-container, .logo) {
+	width: 100%;
+}
+
+.logo img {
+	width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 navbar css                                 */
+/* -------------------------------------------------------------------------- */
+:is(.navbar-container, .inner-navbar-container) {
+	width: 100%;
+}
+
+.inner-navbar-container {
+	display: flex;
+	gap: 0.4rem;
+	flex-direction: column;
+}
+
+.navbar-item-container {
+	width: 100%;
+}
+
+.navbar-item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	align-self: stretch;
+	cursor: pointer;
+	padding: 10px var(--spacing-space-200);
+	gap: var(--spacing-space-150);
+	color: var(--content-secondary);
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+}
+
+.navbar-item:hover {
+	background: var(--background-brand);
+}
+
+.navbar-item-active {
+	background: var(--background-brand);
+	color: var(--base-brand);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 profile css                                */
+/* -------------------------------------------------------------------------- */
+.profile-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.profile-image {
+	width: 20%;
+}
+
+.profile-image img {
+	width: 100%;
+}
+
+.profile-content {
+	width: 80%;
+	height: 100%;
+}
+
+:is(.profile-name, .profile-email) {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.8rem;
+}
+
+.profile-name {
+	font-size: 1.4rem;
+	color: var(--content-primary);
+}
+
+.profile-email {
+	font-size: 1.2rem;
+	color: var(--content-secondary);
+}

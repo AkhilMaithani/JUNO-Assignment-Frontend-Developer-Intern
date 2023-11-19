@@ -1,0 +1,162 @@
+/* -------------------------------------------------------------------------- */
+/*                               Layout Css File                              */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                            dashboard layout css                            */
+/* -------------------------------------------------------------------------- */
+.dashboard-outer-section {
+	width: 100%;
+	height: 100vmin;
+	position: relative;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
+}
+
+.dashboard-inner-section {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
+}
+
+.sidebar-conatiner {
+	width: 258px;
+	height: 100%;
+	padding: 4.8rem 3.2rem 3.2rem 3.2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-shrink: 0;
+	border-right: 1px solid var(--stroke-primary);
+	background-color: var(--background-default);
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
+}
+
+.sidebar {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-self: stretch;
+	gap: 4.8rem;
+}
+
+.component {
+	width: calc(100% - 258px);
+	height: 100%;
+	padding: 48px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             element layout css                             */
+/* -------------------------------------------------------------------------- */
+.element-container {
+	width: 100%;
+	height: 100%;
+}
+
+.element-container h2 {
+	color: var(--content-primary);
+	font-size: 3.2rem;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 28px;
+}
+
+.hide-icon-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.hide-icon {
+	width: 32px;
+	height: 32px;
+	background-color: var(--background-default);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.5rem;
+	font-size: 2rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
+	display: none;
+}
+
+.hide-icon:hover {
+	background-color: var(--background-disabled);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           responsive design code                           */
+/* -------------------------------------------------------------------------- */
+@media screen and (width >= 1440px) {
+}
+
+@media screen and (width < 1440px) {
+}
+
+@media screen and (width <= 1024px) {
+}
+
+@media screen and (width <= 768px) {
+	.dashboard-outer-section {
+		height: 100vmax;
+	}
+
+	.sidebar-conatiner {
+		position: absolute;
+		top: 0;
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		-moz-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
+		-o-transform: translateX(-100%);
+		transition-property: all;
+		transition-duration: 0.1s;
+		transition-timing-function: ease-in;
+	}
+
+	.sidebar-conatiner.float-sidebar {
+		position: absolute;
+		top: 0;
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
+		z-index: 8;
+	}
+
+	.component {
+		width: 100%;
+	}
+
+	.hide-icon {
+		display: flex;
+	}
+}
+
+@media screen and (width <= 425px) {
+}
+
+@media screen and (width <= 375px) {
+}
+
+@media screen and (width <= 320px) {
+	.sidebar-conatiner {
+		width: 230px;
+	}
+}
