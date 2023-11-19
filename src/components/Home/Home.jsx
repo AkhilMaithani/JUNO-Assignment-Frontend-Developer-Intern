@@ -39,7 +39,7 @@ function Home() {
 
 		toast.success("Data added successfully.");
 
-		navigate("dashboard", { replace: true });
+		navigate("/dashboard", { replace: true });
 	};
 
 	// useEffect - welcome message and instructions

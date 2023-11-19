@@ -71,11 +71,27 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 2rem;
 }
 
 .page-not-found h2 {
 	font-size: 3rem;
 	font-family: "Open Sans", sans-serif;
+}
+
+.back-button {
+	border: none;
+	outline: none;
+	background-color: #cdcdcd;
+	font-weight: 600;
+	padding: 1.5rem 2rem;
+	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 @media screen and (width <= 768px) {

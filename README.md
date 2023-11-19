@@ -2,8 +2,6 @@
 
 The project is designed based upon the figma design given by JUNO Team.
 
-### [Project Live Link]()
-
 ## Features
 
 1. Active Routes, Nested Routes
@@ -34,7 +32,3 @@ The project is designed based upon the figma design given by JUNO Team.
 5. Run Command - `npm run dev` for starting the project
 
 ### NOTE: The project is soely done by me. - AKHIL MAITHANI
-
-### [Project Live Link]()
-
-### [Project Repository Link]()
