@@ -24,6 +24,7 @@ import SourceOfIncome from "./components/SourceOfIncome/SourceOfIncome";
 import Uar from "./components/UAR/UAR";
 import Completed from "./components/Completed/Completed";
 import Pending from "./components/Pending/Pending";
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 
 // import ToastContainer - rt
 import { ToastContainer } from "react-toastify";
@@ -46,6 +47,7 @@ const router = createBrowserRouter(
 				<Route path="source-of-income" element={<SourceOfIncome />} />
 				<Route path="uar" element={<Uar />} />
 			</Route>
+			<Route path="*" element={<NotFoundPage />} />
 		</Route>
 	)
 );
