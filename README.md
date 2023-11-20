@@ -31,4 +31,4 @@ The project is designed based upon the figma design given by JUNO Team.
 4. Run Command - `npm install` for node-modules
 5. Run Command - `npm run dev` for starting the project
 
-### NOTE: The project is soely done by me. - AKHIL MAITHANI
+### Note: This project is completely created by me - Akhil Maithani
