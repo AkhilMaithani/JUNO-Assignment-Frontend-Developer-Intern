@@ -88,9 +88,8 @@ th {
 
 td {
 	height: 4.5rem;
-	padding: 1.8rem 2rem;
+	padding: 2rem 2rem;
 	font-size: 1.2rem;
-	background-color: #fff;
 	font-size: 1.2rem;
 	color: var(--content-primary, #050505);
 	font-style: normal;
@@ -110,6 +109,20 @@ th div {
 	justify-content: flex-start;
 	align-items: center;
 	gap: 1rem;
+}
+
+tbody tr {
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--background-raise);
+}
+
+tbody tr:hover {
+	background-color: var(--background-brand);
 }
 
 .data-container {

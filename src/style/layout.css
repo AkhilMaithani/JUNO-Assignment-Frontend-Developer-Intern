@@ -140,6 +140,12 @@
 	}
 }
 
+@media screen and (width <= 426px) {
+	.component {
+		padding: 48px 22px;
+	}
+}
+
 @media screen and (width <= 320px) {
 	.sidebar-conatiner {
 		width: 230px;

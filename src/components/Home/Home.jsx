@@ -37,7 +37,10 @@ function Home() {
 		localStorage.setItem("name", `${data.name}`);
 		localStorage.setItem("email", `${data.email}`);
 
-		toast.success("Data added successfully.");
+		toast.success("Data added successfully.", {
+			position: toast.POSITION.BOTTOM_RIGHT,
+			className: "toast-message",
+		});
 
 		navigate("/dashboard", { replace: true });
 	};

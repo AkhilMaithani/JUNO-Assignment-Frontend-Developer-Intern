@@ -36,6 +36,14 @@
 	transition-timing-function: ease-in;
 }
 
+.nested-link-item:hover {
+	transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+}
+
 .nested-link-item-active {
 	color: var(--base-brand);
 	border-bottom-style: solid;
@@ -77,6 +85,10 @@
 	transition-property: all;
 	transition-duration: 0.1s;
 	transition-timing-function: ease-in;
+}
+
+.button-container:hover {
+	background-color: lightpink;
 }
 
 :is(.button-icon, .button-content) {

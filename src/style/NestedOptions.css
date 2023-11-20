@@ -44,6 +44,9 @@
 	-o-border-radius: 9px 8px 8px 9px;
 	border: 1px solid var(--stroke-primary, #e4e4e4);
 	background: var(--background-default, #fff);
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
 }
 
 .search-container input:placeholder-shown {
@@ -54,6 +57,10 @@
 	line-height: 18px;
 	letter-spacing: 0.1rem;
 	outline: none;
+}
+
+.search-container input:focus {
+	border: 1px solid var(--content-secondary);
 }
 
 .search-icon {
@@ -111,6 +118,9 @@
 	line-height: 100%;
 	padding: 8px 12px;
 	cursor: default;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
 }
 
 .select-box input:placeholder-shown {
